@@ -530,6 +530,7 @@ const FormField = forwardRef(
         onChange={
           contextOnChange || onChange
             ? (event) => {
+              console.log(event);
                 event.persist();
                 if (onChange) onChange(event);
                 if (contextOnChange)
